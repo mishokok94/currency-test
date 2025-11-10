@@ -20,6 +20,8 @@ return [
         'date_to' => 'Până la data',
         'apply' => 'Aplică filtrele',
         'reset' => 'Resetează',
+        'date_range_label' => 'Interval de date',
+        'date_range' => ':from — :to',
     ],
     'calculator' => [
         'title' => 'Calculator valutar',
@@ -29,6 +31,8 @@ return [
         'buy_total' => 'Total cumpărare',
         'sell_total' => 'Total vânzare',
     ],
+    'navigation_label' => 'Cursuri valutare',
+    'navigation_group' => 'Analitică',
     'sync_success' => 'Cursurile au fost actualizate. :count înregistrări încărcate.',
     'sync_error_key' => 'Nu s-au putut actualiza cursurile. Verifică cheia API.',
     'sync_error_generic' => 'Serviciul de cursuri valutare nu este disponibil. Încearcă din nou mai târziu.',
