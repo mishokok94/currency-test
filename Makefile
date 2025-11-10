@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 
 APP_CONTAINER := app
-COMPOSE := docker compose
+COMPOSE := docker compose -f docker/docker-compose.yml
 
 .PHONY: help install start stop restart logs migrate seed sync schedule-build schedule-run npm dev build test lint clean
 
@@ -25,7 +25,7 @@ help:
 	@echo "  clean          Remove vendor and node_modules"
 
 install:
-	$(COMPOSE) exec $(APP_CONTAINER) composer install --prefer-dist --no-interaction
+	$(COMPOSE) run --rm $(APP_CONTAINER) composer install --prefer-dist --no-interaction
 
 start:
 	$(COMPOSE) up -d
